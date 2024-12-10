@@ -35,6 +35,7 @@ kubectl apply -f deployment.yaml
 minikube service angular-service
 
 To enable the NGINX Ingress controller, run the following command:
+
 minikube addons enable ingress
 
 It can take up to a minute before you see these pods running OK.
