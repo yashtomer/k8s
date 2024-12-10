@@ -17,23 +17,31 @@ This guide provides instructions to set up a Minikube cluster, build and run an 
 ## Imp Commands
 
 **Minikubes Commands**
+
 minikube start
+
 eval $(minikube docker-env)
 
 **Docker Commands**
+
 docker build -t angular .
+
 docker run --name angular -p 80:80 angular
 
 **kubectl Commands**
+
 kubectl apply -f deployment.yaml
+
 minikube service angular-service
 
 To enable the NGINX Ingress controller, run the following command:
 minikube addons enable ingress
 
 It can take up to a minute before you see these pods running OK.
+
 kubectl get pods -n ingress-nginx
 
 **check your application**
+
 curl yash.com --resolve yash.com:80:192.168.49.2
 
