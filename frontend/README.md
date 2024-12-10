@@ -7,7 +7,7 @@ This guide provides instructions to set up a Minikube cluster, build and run an 
    Follow the official [Minikube Installation Guide](https://minikube.sigs.k8s.io/docs/start/).
 
 2. **Install Docker**  
-   Refer to the [Docker Installation Guide](https://docs.docker.com/get-docker/).
+   Refer to the [Docker Installation Guide](https://docs.docker.com/engine/install/ubuntu/).
 
 3. **Configure `/etc/hosts`**  
    Add the following entry to your `/etc/hosts` file:  
